@@ -1,0 +1,105 @@
+<html>
+<head>
+  <link href="assest/css/style.css" rel="stylesheet">
+<title>Home Page</title>
+  <link rel="stylesheet" href="assest/css/style.css">
+
+
+</head>
+<body>
+<body bgcolor="#E5E7E9">
+
+<center>
+<!--- NAVIGATION BAR START --->
+<div class="topnav">
+  <a class="active" href="index.html">ABOUT ME</a>
+  <a href="biodata.html">BIODATA</a>
+  <a href="experience.html">EXPERIENCE</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="family.html">FAMILY</a>
+  <a href="gallery.html">GALLERY</a>
+</div>
+<!--- NAVIGATION BAR END --->
+</center>
+<br><br><br>
+
+
+
+<center>
+<div id="clock">8:10:45</div>
+<script src="clock2.js"></script>
+<br><br>
+</center>
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+
+<center>
+</pre>
+<blockquote>
+<i><b>"Demi masa. Sesungguhnya manusia itu benar-benar berada dalam kerugian, kecuali orang-orang yang beriman dan mengerjakan amal saleh dan nasehat menasehati supaya mentaati kebenaran dan nasehat menasehati supaya menetapi kesabaran". (al-‘Asr: 1-3)
+</blockquotes>
+</center>
+
+<center>
+<img src="assest/image/Ella.jpg" width="380px" height="480px" border="10">
+</center>
+
+<br>
+<center>
+<font color="#57475F "face="mono upper" size="20" > WELCOME TO MY WEBSITE!!</font>
+</center>
+
+<br>
+<center>
+<!--- INSERTING AUDIO --->
+<audio controls autoplay loop>
+<source src="assest/audio/Alyph.mp3" type="audio/mp3">
+</audio>
+</center>
+
+<br>
+<center>
+</pre>
+<blockquote>
+<i><b>"Sometimes I wish life was like a book so I could sneak a peak at the last few pages just to make sure everything turns out okay" -power of poetry
+</blockquotes>
+</center>
+
+<br><br><br>
+<footer>
+  <p>CONTACT<br><br>
+  <a href="https://www.facebook.com/siti.nursyuhaila.8/"><img src="assest/image/Facebook_Icon.png" width="36" height="38px" align="center"></a>
+  <a href="https://www.instagram.com/syuhaila.othmn_/"><img src="assest/image/Instagram_Icon.jpg" width="36" height="38px" align="center"></a>
+  <a href="https://www.wattpad.com/user/SitiNursyuhaila"><img src="assest/image/Wattpad_Icon.jpg" width="36" height="38px" align="center"></a>
+  <a href="mailto:syuhaila.othman08@gmail.com"><img src="assest/image/Email_Icon.jpg" width="36" height="38px" align="center"></a>
+</footer>
+</body>
+</html>
